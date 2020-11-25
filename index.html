@@ -3,30 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="css/style.css">
     <script defer src="js/app.js"></script>
     <title>Calculator</title>
 </head>
 <body>
-    <h1>Calculator</h1>
     
+    <h1>Calculator</h1>
     <div id=container>
-        <h2 type="number" class= "displayScreen">0</h2>
-        <button  class="reset">AC</button>
-        <button id= "operator" class="divide">➗ </button>
-        <button id ="operator" class="multiple">✖ </button>
-        <button id= "operator" class= "subtract">➖ </button>
-        <button id= "operator" class ="addition">➕ </button>
-        <button id= "number" class="numero1">1</button>
-        <button id= "number" class ="numero2">2</button>
-        <button id= "number" class= "numero3">3</button>
-        <button id="number" class= "numero4">4</button>
-        <button id= "number" class= "numero5">5</button>
-        <button id= "number" class="numero6>">6</button>
-        <button id= "number" class= "numero7">7</button>
-        <button id="number" class= "numero8">8</button>
-        <button id="number" class ="numero9">9</button>
-        <button id="number" class ="numero0">0</button>
+        <div class="displayScreen">
+            <h2 type="number" value= "">0</h2>
+        </div>
+       
+        <div id="keyboard">
+            <button  id= "displayChange" class="reset">AC</button>
+            <button id="displayChange" class ="backspace">CE</button>
+            <button id= "operator" class="divide">➗ </button>
+            <button id ="operator" class="multiple">✖ </button>
+            <button id= "operator" class= "subtract">➖ </button>
+            <button id= "operator" class ="addition">➕ </button>
+            <button id="operator" class= "equal">=</button>
+            <button id= "numbers" class="numero1">1</button>
+            <button id= "numbers" class ="numero2">2</button>
+            <button id= "numbers" class= "numero3">3</button>
+            <button id="numbers" class= "numero4">4</button>
+            <button id= "numbers" class= "numero5">5</button>
+            <button id= "numbers" class="numero6>">6</button>
+            <button id= "numbers" class= "numero7">7</button>
+            <button id="numbers" class= "numero8">8</button>
+            <button id="numbers" class ="numero9">9</button>
+            <button id="numbers" class ="numero0">0</button>
+
+        </div>
+        
+        <!-- <table class="frame">
+        <h2 type="number" class= "displayScreen" value="">0</h2>
+        <tr class=ops>
+            <button  class="reset">AC</button>
+            <button id= "operator" class="divide">➗ </button>
+            <button id ="operator" class="multiple">✖ </button>
+            <button id= "operator" class= "subtract">➖ </button>
+            <button id= "operator" class ="addition">➕ </button>
+            <button id="operator" class= "equal">=</button>
+        </tr>
+        <tr class='line1'>
+            <button id= "numbers" class="numero1">1</button>
+            <button id= "numbers" class ="numero2">2</button>
+            <button id= "numbers" class= "numero3">3</button>
+        </tr>
+        <tr class='line2'>
+            <button id="numbers" class= "numero4">4</button>
+            <button id= "numbers" class= "numero5">5</button>
+            <button id= "numbers" class="numero6>">6</button>
+         </tr>
+         <tr>
+            <button id= "numbers" class= "numero7">7</button>
+            <button id="numbers" class= "numero8">8</button>
+            <button id="numbers" class ="numero9">9</button>
+        </tr>
+        <tr>
+        <button id="numbers" class ="numero0">0</button>
+        </tr> -->
     </div>
+</table>
 </body>
 </html>

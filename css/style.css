@@ -16,36 +16,39 @@ body{
 }
 #container{
     display: flex;
+    justify-content: center;
+    margin: 75px;
     background-color: #5FFBF1;
     border: orange solid 15px;
-    padding: 40px 80px 50px 100px;
-}
-h1{
-    display: flex;
-    
-    justify-content:center;    
-    color: orange;
+    padding: 40px 80px 50px 100px;  
+    height: 350px; 
+    width: 150px;
+    box-shadow: 10px 10px 10px 10px;
 
 }
 h2{
-    font-size: x-large;
+    display: flex;
     justify-content: center;
+    background-color: white;
+    border: 5px solid orange;
+    padding: 5px 0px 10px 0px;
+    height: 35px;
+    width: 180px;
+    font-size: 40px;  
+    text-align: right;
 }
-button{
-    justify-content: center;
+h1{
+    display: flex; 
+    align-items: flex-start;
+    text-shadow: 2px 5px 2px black;
+    font-family: 'Bebas Neue', cursive;
+    color: orange;
+    font-size: 40px;
+}
+#displayChange, #operator, #numbers{
     border-radius: 50%;
-    font-size: x-large;
+    color: white;
+    height: 35px;
+    width: 40px;
+    text-align: center;
 }
-#operator{
-    background-color: pink;
-}
-
-.reset{
-    background-color: orange;
-}
-#number{
-    background-color: #86A8E7
-}
-
-
-
