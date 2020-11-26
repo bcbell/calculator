@@ -10,63 +10,43 @@
     <title>Calculator</title>
 </head>
 <body>
-    
-    <h1>Calculator</h1>
-    <div id=container>
-        <div class="displayScreen">
-            <h2 type="number" value= "">0</h2>
+     <h1>Calculator</h1>
+     <div id=container>
+     <form name= "calculator">
+        <table>
+            <div id =row>
+                <input id= "results" type= "text" name ="display" value = " "/>
+            </div>
+            <div id =row>
+                <input type = "button" id= "operator" value= "AC " name="reset" onclick= "pushBtn(reset.value)" />
+                <input type = "button" id= "operator" value = "/" name="divide"onclick= "pushBtn(divide.value)" />
+           </div> 
+           <div id= "row">
+                <input type ="button" id= "numbers" name="numero1" value= "1" onclick= "pushBtn(numero1.value)"/>
+                <input type = "button" id= "numbers" name ="numero2" value = "2" onclick= "pushBtn(numero2.value)"/>
+                <input type= "button" id= "numbers" name= "numero3" value = "3" onclick= "pushBtn(numero3.value)"/>
+                <input type = "button" id = "operator" name="times" value= "*" onclick = "pushBtn(times.value)"/>
+            </div>
+           <div id = "row">
+                <input type = "button" id="numbers" name= "numero4" value = "4" onclick= "pushBtn( numero4.value)" />
+                 <input type = "button" id= "numbers" name= "numero5" value = "5" onclick= "pushBtn(numero5.value)"/>
+                <input type ="button" id= "numbers" name="numero6" value = "6" onclick= "pushBtn(numero6.value)" />
+                <input type= "button" id= "operator" name= "subtract" value = "-" onclick = "pushBtn(subtract.value)" />
+           </div>
+            <div id = "row">
+                <input type = "button" id= "numbers" name= "numero7" value = "7" onclick= "pushBtn(numero7.value)" />
+                <input type = "button" id="numbers" name= "numero8" value ="8" onclick= "pushBtn(numero8.value)" />
+                <input type= "button" id="numbers" name ="numero9" value ="9" onclick= "pushBtn(numero9.value)" />
+                <input type= "button" id= "operator" name ="addition" value="+" onclick= "pushBtn(addition.value)"/>
+            </div>
+            <div id = "row">
+                <input type= "button"  id="numbers" value = "0" name ="numero0" onclick= "pushBtn(numero0.value)" />
+                <input type= "button" id="operator" value = "." name="decimal" onclick= "pushBtn(decimal.value)"/>
+                <input type = "button" id="operator" name= "equal" value = "=" onclick= "display.value = eval(display.value)" />
+            </div>>
+            </tr>
+        </table>
+    </form>
         </div>
-       
-        <div id="keyboard">
-            <button  id= "displayChange" class="reset">AC</button>
-            <button id="displayChange" class ="backspace">CE</button>
-            <button id= "operator" class="divide">➗ </button>
-            <button id ="operator" class="multiple">✖ </button>
-            <button id= "operator" class= "subtract">➖ </button>
-            <button id= "operator" class ="addition">➕ </button>
-            <button id="operator" class= "equal">=</button>
-            <button id= "numbers" class="numero1">1</button>
-            <button id= "numbers" class ="numero2">2</button>
-            <button id= "numbers" class= "numero3">3</button>
-            <button id="numbers" class= "numero4">4</button>
-            <button id= "numbers" class= "numero5">5</button>
-            <button id= "numbers" class="numero6>">6</button>
-            <button id= "numbers" class= "numero7">7</button>
-            <button id="numbers" class= "numero8">8</button>
-            <button id="numbers" class ="numero9">9</button>
-            <button id="numbers" class ="numero0">0</button>
-
-        </div>
-        
-        <!-- <table class="frame">
-        <h2 type="number" class= "displayScreen" value="">0</h2>
-        <tr class=ops>
-            <button  class="reset">AC</button>
-            <button id= "operator" class="divide">➗ </button>
-            <button id ="operator" class="multiple">✖ </button>
-            <button id= "operator" class= "subtract">➖ </button>
-            <button id= "operator" class ="addition">➕ </button>
-            <button id="operator" class= "equal">=</button>
-        </tr>
-        <tr class='line1'>
-            <button id= "numbers" class="numero1">1</button>
-            <button id= "numbers" class ="numero2">2</button>
-            <button id= "numbers" class= "numero3">3</button>
-        </tr>
-        <tr class='line2'>
-            <button id="numbers" class= "numero4">4</button>
-            <button id= "numbers" class= "numero5">5</button>
-            <button id= "numbers" class="numero6>">6</button>
-         </tr>
-         <tr>
-            <button id= "numbers" class= "numero7">7</button>
-            <button id="numbers" class= "numero8">8</button>
-            <button id="numbers" class ="numero9">9</button>
-        </tr>
-        <tr>
-        <button id="numbers" class ="numero0">0</button>
-        </tr> -->
-    </div>
-</table>
 </body>
 </html>
