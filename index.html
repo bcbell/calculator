@@ -13,13 +13,12 @@
      <h1>Calculator</h1>
      <div id=container>
      <form name= "calculator">
-        <table>
             <div id =row>
                 <input id= "results" type= "text" name ="display" value = " "/>
             </div>
             <div id =row>
-                <input type = "button" id= "operator" value= "AC " name="reset" onclick= "pushBtn(reset.value)" />
-                <input type = "button" id= "operator" value = "/" name="divide"onclick= "pushBtn(divide.value)" />
+                <input type = "reset" id= "reset" value= "AC " name="reset" onclick= "pushBtn(reset.value)" />
+                <input type = "button" id= "operator" value = "/" name="divide" onclick= "pushBtn(divide.value)" />
            </div> 
            <div id= "row">
                 <input type ="button" id= "numbers" name="numero1" value= "1" onclick= "pushBtn(numero1.value)"/>
@@ -40,12 +39,10 @@
                 <input type= "button" id= "operator" name ="addition" value="+" onclick= "pushBtn(addition.value)"/>
             </div>
             <div id = "row">
-                <input type= "button"  id="numbers" value = "0" name ="numero0" onclick= "pushBtn(numero0.value)" />
+                <input type= "button"  id="zero" value = "0" name ="numero0" onclick= "pushBtn(numero0.value)" />
                 <input type= "button" id="operator" value = "." name="decimal" onclick= "pushBtn(decimal.value)"/>
                 <input type = "button" id="operator" name= "equal" value = "=" onclick= "display.value = eval(display.value)" />
-            </div>>
-            </tr>
-        </table>
+            </div>
     </form>
         </div>
 </body>

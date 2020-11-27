@@ -14,58 +14,61 @@ html{
 }
 h1{
     display: flex; 
-    text-shadow: 2px 5px 2px white;
+    text-shadow: 2px 5px 2px #008F92;
     font-family: 'Bebas Neue', cursive;
-    color: orange;
+    color: white;
     font-size: 60px;
-     -webkit-text-stroke: .5px white;
+     -webkit-text-stroke: .5px #a8eb12;
+     background-image: linear-gradient(to right top, #ff3aab, #ff4e6c, #ff8727, #f2be00, #a8eb12);
+     box-shadow: 5px 5px 10px white;
 }
-table{
+#container{
     display:flex;
     justify-content: center;
     align-items: center;
-    margin: 0 350px;
-    height: 600px;
-    width: 290px;
+    margin:100px 450px;
     background-color: #ff0e3c;
-    border: orange solid 15px;
+    border:  #ff8727 solid 15px;
     text-align: right;
     font-size: 40px;
     box-shadow: 5px 5px 10px white;
     border-radius: 10px;
 }
 
-button{
+input{
     background-color: yellow;
     font-size: 25px;
-    text-shadow: 5px 5px 5px white;
+    color: #008F92;
+    box-shadow: 5px 5px 10px white;
     border-radius: 50px;
     border: solid rgba(208, 255, 0, 0.435);
     box-shadow: 5px 5px black;
-    padding: 10px 10px 15px 20px;
     text-align: center;
-    margin-top: 25px;
+    margin-bottom: 20px;
 }
-button:hover{
-    background-color:#FF3AAB ;
+input:hover{
+    background-image: linear-gradient(to bottom, #ff3aab, #ff4e6c, #ff8727, #f2be00, #a8eb12);
+}
+#row{
+    padding: 5px ;
 }
 
-.reset{
-    padding: 15px 30px ;
-}
-
-#numbers{
-    text-align: center;
-}
-#results, #history{
-    background-color: rgba(250, 255, 255, 0.408);
-    margin: 50px 60px;
-    border-radius: 10px;
-}
 #results{
-    background-color:white;
+    background-image: linear-gradient(to left, #ff3aab, #ff4e6c, #ff8727, #f2be00, #a8eb12);
+    border-radius: 10px;
+   padding: 20px 30px;
+   margin-bottom: 20px;
+   margin-top: 20px;
 }
-#history{
-    font-size: 30px;
-    color: rgba(0, 0, 0, 0.422);
+
+#numbers, #operator{
+    padding: 20px 30px;
+}
+#reset{
+    padding: 30px 80px;
+    margin-right: 65px ;
+}
+#zero{
+    padding: 30px 70px;
+    margin-right: 15px;
 }
