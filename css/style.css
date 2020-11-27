@@ -11,6 +11,7 @@ html{
 }
  body{
     justify-content: center;
+    border: 10px solid #ff3aab;
 }
 h1{
     display: flex; 
@@ -18,17 +19,22 @@ h1{
     font-family: 'Bebas Neue', cursive;
     color: white;
     font-size: 60px;
-     -webkit-text-stroke: .5px #a8eb12;
-     background-image: linear-gradient(to right top, #ff3aab, #ff4e6c, #ff8727, #f2be00, #a8eb12);
-     box-shadow: 5px 5px 10px white;
+    background-image: linear-gradient(to right top, #ff3aab, #ff4e6c, #ff8727, #f2be00, #a8eb12);
+    box-shadow: 5px 5px 10px white;
+    border: 2px solid white;
+    margin-right: 50px;
+    margin-left: 50px;
+    justify-content: center;
+    -webkit-text-stroke: .5px #a8eb12;
+     
+     
 }
 #container{
     display:flex;
     justify-content: center;
     align-items: center;
     margin:100px 450px;
-    background-color: #ff0e3c;
-    border:  #ff8727 solid 15px;
+    border:  #a8eb12 solid 15px;
     text-align: right;
     font-size: 40px;
     box-shadow: 5px 5px 10px white;
@@ -39,6 +45,8 @@ input{
     background-color: yellow;
     font-size: 25px;
     color: #008F92;
+    text-shadow: 2px 1.5px 2px #a8eb12;
+    -webkit-text-stroke: .5px white;
     box-shadow: 5px 5px 10px white;
     border-radius: 50px;
     border: solid rgba(208, 255, 0, 0.435);
